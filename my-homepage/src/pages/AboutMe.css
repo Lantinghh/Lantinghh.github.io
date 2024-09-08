@@ -1,0 +1,62 @@
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-content {
+    flex: 1;
+    padding-right: 40px; /* Add some space between the content and the image */
+    text-align: left; /* Align the text to the left */
+  }
+  
+  .about-photo img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-content h3 {
+    font-size: 1.8rem;
+    color: #666;
+    margin-top: 30px;
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      align-items: flex-start; /* Keep everything aligned left */
+    }
+  
+    .about-content {
+      padding-right: 0;
+    }
+  
+    .about-photo img {
+      width: 200px;
+      height: 200px;
+      margin-top: 20px; /* Add some space between the content and the image */
+    }
+  }
+  
